@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Márk Mucska | Portfolio 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="media/graphics/left_side_fix.png" class="side-art left-art sketch-asset">
+    <img src="media/graphics/right_side_fix.png" class="side-art right-art sketch-asset">
+
+    <div class="container">
+        <header class="site-header">
+    <div class="hero-overlay-container">
+        <img src="media/graphics/hero.png" class="hero-overlay-img sketch-asset" alt="Hero Art">
+        <h1 class="hero-title-overlay">Márk Mucska</h1>
+    </div>
+    
+    <p class="hero-subtitle">
+        Computer Science Student | Technical Designer | Pécs, Hungary
+    </p>
+</header>
+
+        <section id="about">
+            <h2>01 / About Me</h2>
+            <p>My name is Márk Mucska, and I am a computer science student in my final year at the University of Pécs. My focus is on creating games that leave an impact on the player.</p>
+            <p>I have worked with Unity and Godot, and I am currently dedicated to mastering the production pipeline. In my free time, I enjoy video games, origami, and writing Steam reviews.</p>
+        </section>
+
+        <section id="sneak">
+            <h2>Sneak and Squeak</h2>
+            <span class="project-meta">Lead Programmer & Technical Designer | Unity | Best Game Award</span>
+            
+            <p>Developed during an intensive 5-day program in Utrecht, our team designed a co-op puzzle game based on the theme "Cheese". As the Lead Programmer, I acted as the technical anchor for the project.</p>
+            
+            <img src="media/sneak/sneak_4.png" class="feature-img" alt="Title Screen">
+            
+            <div class="gallery-grid">
+                <img src="media/sneak/sneak_6.png">
+                <img src="media/sneak/sneak_1.gif">
+                <img src="media/sneak/sneak_2.gif">
+                <img src="media/sneak/sneak_3.gif">
+            </div>
+
+            <p>Despite having the smallest team, we delivered the most stable experience and won the "Best Game" award out of six teams.</p>
+            
+            <img src="media/sneak/sneak_5.png" style="max-width: 500px; margin: 2rem auto; display: block;" alt="Caught Screen">
+        </section>
+
+        <section id="doodle">
+            <h2>02 / Doodle Run</h2>
+            <span class="project-meta">Solo Developer | Construct 3 | 1 Week</span>
+            
+            <p>Doodle Run is a high-precision 2D platformer focused on "hard parkour" mechanics. I managed every pillar of production, from the movement systems to the hand-drawn art direction.</p>
+
+            <div class="gallery-grid">
+                <img src="media/doodle/doodle_1.gif" class="doodle-run-frame">
+                <img src="media/doodle/doodle_2.gif" class="doodle-run-frame">
+                <img src="media/doodle/doodle_3.gif" class="doodle-run-frame">
+                <img src="media/doodle/doodle_4.gif" class="doodle-run-frame">
+            </div>
+        </section>
+
+        <section id="ideas">
+            <h2>03 / Conceptual Ideas</h2>
+            <p>I constantly sketch and prototype new mechanics to explore experimental game loops.</p>
+
+            <div class="ideas-grid">
+                <div class="idea-item" onclick="openLB('ideas',0)"><img src="media/ideas/bullet_plat.png" class="idea-frame"><p><strong>Bullet Platformer</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',1)"><img src="media/ideas/infinijump.png" class="idea-frame"><p><strong>Infinijump</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',2)"><img src="media/ideas/possum.png" class="idea-frame"><p><strong>Possum Game</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',3)"><img src="media/ideas/indiv.png" class="idea-frame"><p><strong>Individualist</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',4)"><img src="media/ideas/sneeze_sim.png" class="idea-frame"><p><strong>Sneeze Simulator</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',5)"><img src="media/ideas/speed.png" class="idea-frame"><p><strong>Speed Concept</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',6)"><img src="media/ideas/concept_art.png" class="idea-frame"><p><strong>Environment Concept</strong></p></div>
+                <div class="idea-item" onclick="openLB('ideas',7)"><img src="media/ideas/ideas.png" class="idea-frame"><p><strong>Environment Concept</strong></p></div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>04 / Playtesting</h2>
+            <p>I have provided detailed feedback for major titles, helping identify bugs and improve UX flow:</p>
+            <p style="font-family: monospace; color: #666;">
+                > Rainbow Six Extraction | The Outlast Trials | Back 4 Blood | Deadlock | MultiVersus
+            </p>
+        </section>
+
+        <footer style="text-align: center; padding: 4rem 0;">
+            <img src="media/graphics/bottom_of_page.png" class="footer-art sketch-asset">
+            <div class="contact-links">
+                <a href="mailto:mark.mucska@gmail.com">Email</a>
+                <a href="https://github.com/robb1ngood" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/márk-mucska-1a187a334/" target="_blank">LinkedIn</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.7rem; color: #888;">© 2026 MÁRK MUCSKA</p>
+        </footer >
+
+    </div>
+
+
+    <div class="lb" id="lb" onclick="lbOutside(event)">
+        <div class="lb-inner">
+            <button class="lb-close" onclick="closeLB()">CLOSE ✕</button>
+            <button class="lb-arrow prev" onclick="event.stopPropagation();shiftLB(-1)">‹</button>
+            <button class="lb-arrow next" onclick="event.stopPropagation();shiftLB(1)">›</button>
+            <img id="lb-img" src="" alt="">
+            <div class="lb-cap" id="lb-cap"></div>
+        </div>
+    </div>
+
+    <script>
+    // 1. Data defining the images in the gallery
+    const galleryData = {
+        ideas: [
+            {src: 'media/ideas/bullet_plat.png', cap: 'Bullet Platformer'},
+            {src: 'media/ideas/infinijump.png',  cap: 'Infinijump'},
+            {src: 'media/ideas/possum.png',      cap: 'Possum Game'},
+            {src: 'media/ideas/indiv.png',       cap: 'Individualist'},
+            {src: 'media/ideas/sneeze_sim.png',  cap: 'Sneeze Simulator'},
+            {src: 'media/ideas/speed.png',       cap: 'Speed Concept'},
+            {src: 'media/ideas/concept_art.png', cap: 'Environment Concept'},
+            {src: 'media/ideas/ideas.png',       cap: 'Environment Concept'}
+        ]
+    };
+
+    let currentGallery = null;
+    let currentIndex = 0;
+
+    // 2. Open function
+    function openLB(gal, idx) {
+        currentGallery = gal;
+        currentIndex = idx;
+        renderLB();
+        document.getElementById('lb').classList.add('open');
+        document.body.style.overflow = 'hidden'; // Stop scrolling
+    }
+
+    // 3. Update Image & Caption
+    function renderLB() {
+        const item = galleryData[currentGallery][currentIndex];
+        const lbImg = document.getElementById('lb-img');
+        lbImg.src = item.src;
+        document.getElementById('lb-cap').textContent = item.cap + ' (' + (currentIndex + 1) + '/' + galleryData[currentGallery].length + ')';
+    }
+
+    // 4. Navigation
+    function shiftLB(direction) {
+        const total = galleryData[currentGallery].length;
+        currentIndex = (currentIndex + direction + total) % total;
+        renderLB();
+    }
+
+    // 5. Close function
+    function closeLB() {
+        document.getElementById('lb').classList.remove('open');
+        document.body.style.overflow = '';
+        document.getElementById('lb-img').src = '';
+    }
+
+    // 6. Close when clicking background
+    function lbOutside(e) {
+        if (e.target === document.getElementById('lb')) closeLB();
+    }
+
+    // 7. Keyboard support
+    document.addEventListener('keydown', e => {
+        if (!document.getElementById('lb').classList.contains('open')) return;
+        if (e.key === 'Escape') closeLB();
+        if (e.key === 'ArrowRight') shiftLB(1);
+        if (e.key === 'ArrowLeft') shiftLB(-1);
+    });
+</script>
+
+</body>
+</div>
+</html>
