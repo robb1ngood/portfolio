@@ -8,22 +8,32 @@
 </head>
 <body>
 
+    <nav>
+        <a href="#hero" class="nav-logo">Márk Mucska's Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#sneak">Projects</a></li>
+            <li><a href="#ideas">Ideas</a></li>
+            <li><a href="#experience">Playtesting</a></li>
+        </ul>
+    </nav>
+
     <img src="media/graphics/left_side_fix.png" class="side-art left-art sketch-asset">
     <img src="media/graphics/right_side_fix.png" class="side-art right-art sketch-asset">
 
     <div class="container">
-        <header class="site-header">
-    <div class="hero-overlay-container">
-        <img src="media/graphics/hero.png" class="hero-overlay-img sketch-asset" alt="Hero Art">
-        <h1 class="hero-title-overlay">Márk Mucska</h1>
-    </div>
-    
-    <p class="hero-subtitle">
-        Computer Science Student | Technical Designer | Pécs, Hungary
-    </p>
-</header>
+        <header id="hero" class="site-header reveal">
+            <div class="hero-overlay-container">
+                <img src="media/graphics/hero.png" class="hero-overlay-img sketch-asset" alt="Hero Art">
+                <h1 class="hero-title-overlay">Márk Mucska<span class="blink">_</span></h1>
+            </div>
+            
+            <p class="hero-subtitle">
+                Computer Science Student | Technical Designer | Pécs, Hungary
+            </p>
+        </header>
 
-        <section id="about">
+        <section id="about" class="reveal">
             <h2>01 / About Me</h2>
             <br>
             <p>My name is Márk Mucska, I am 23 years old and I am a computer science student currently in my final year at the University of Pécs, Hungary. My focus is on creating a game that leaves an impact on the player. So far, I have worked on games in Unity and Godot. I am currently learning the ropes with Godot, but I am open to learn game development in any game engine.</p>
@@ -31,35 +41,35 @@
             <p>I thrive in collaborative environments where technical constraints meet creative problem-solving. I have a strong passion for creating something that means something for people. I am currently seeking a summer internship where I can contribute to a production pipeline and learn from industry veterans. In my free time I love to play video games, do origami and write game reviews on Steam.</p>
         </section>
 
-        <section id="sneak">
+        <section id="sneak" class="reveal">
             <h2>Sneak and Squeak</h2>
             <br>
             <span class="project-meta">Lead Programmer & Technical Designer | Unity (C#) | 1 Week (Utrecht Summer School)</span>
             
             <p>Developed during an intensive 5-day Game Design & Development program in Utrecht, focusing on rapid prototyping and cross-disciplinary collaboration. The goal was to design and prototype a co-op puzzle game from scratch within five days, centered around the prompt: "Cheese."</p>
             
-            <img src="media/sneak/sneak_4.png" class="feature-img" alt="Title Screen">
+            <img src="media/sneak/sneak_4.png" class="feature-img hover-lift" alt="Title Screen">
             
             <p>Working as a small 3-person team against larger groups of 5, we had to rapidly prototype mechanics that felt polished enough for a "Best Game" showcase. As the primary developer, I focused on the "glue" that made the game playable: scripting player systems for co-op movement, building a modular interactable framework for puzzles, acting as the technical anchor for level integration, and collaborating on puzzle design.</p>
 
-            <div class="gallery-grid">
-                <img src="media/sneak/sneak_6.png">
-                <img src="media/sneak/sneak_1.gif">
-                <img src="media/sneak/sneak_2.gif">
-                <img src="media/sneak/sneak_3.gif">
+            <div class="gallery-grid dynamic-grid">
+                <img src="media/sneak/sneak_6.png" class="hover-lift">
+                <img src="media/sneak/sneak_1.gif" class="hover-lift">
+                <img src="media/sneak/sneak_2.gif" class="hover-lift">
+                <img src="media/sneak/sneak_3.gif" class="hover-lift">
             </div>
 
             <p>Out of 6 competing teams, Sneak and Squeak won the "Best Game" award. Despite being the smallest team, we delivered the most stable and mechanically complete experience, proving our ability to prioritize "fun factor" and technical stability under a tight deadline.</p>
             
-            <img src="media/sneak/sneak_5.png" style="max-width: 500px; margin: 2rem auto; display: block;" alt="Caught Screen">
+            <img src="media/sneak/sneak_5.png" class="hover-lift" style="max-width: 500px; margin: 2rem auto; display: block;" alt="Caught Screen">
         </section>
 
-        <section id="doodle">
+        <section id="doodle" class="reveal">
             <h2>02 / Doodle Run</h2>
             <br>
             <span class="project-meta">Solo Developer (Design, Art, & Logic) | Construct 3 | 1 Week</span>
             
-            <p>Doodle Run is a high-precision 2D platformer focused on "hard parkour" mechanics, challenging the player through timed jumps and rhythmic movement.  The primary hurdle was balancing "punishingly difficult" gameplay with "fair" mechanics, ensuring a failure felt like a skill error rather than a glitch.</p>
+            <p>Doodle Run is a high-precision 2D platformer focused on "hard parkour" mechanics, challenging the player through timed jumps and rhythmic movement. The primary hurdle was balancing "punishingly difficult" gameplay with "fair" mechanics, ensuring a failure felt like a skill error rather than a glitch.</p>
             <br><br>
             <p>As a solo creator, I managed every pillar of production:</p><br>
             <p>• Mechanics: Developed movement and jump using Construct’s event system.</p><br>
@@ -67,22 +77,22 @@
             <p>• Level Design: Iterated on level layouts to introduce mechanics gradually before combining them into high-intensity sequences.</p><br>
             <p>• Enemy Logic: Scripted patrol behaviours and hazard triggers to add layers of complexity.</p>
 
-            <div class="gallery-grid">
-                <img src="media/doodle/doodle_1.gif" class="doodle-run-frame">
-                <img src="media/doodle/doodle_2.gif" class="doodle-run-frame">
-                <img src="media/doodle/doodle_3.gif" class="doodle-run-frame">
-                <img src="media/doodle/doodle_4.gif" class="doodle-run-frame">
+            <div class="gallery-grid dynamic-grid">
+                <img src="media/doodle/doodle_1.gif" class="doodle-run-frame hover-lift">
+                <img src="media/doodle/doodle_2.gif" class="doodle-run-frame hover-lift">
+                <img src="media/doodle/doodle_3.gif" class="doodle-run-frame hover-lift">
+                <img src="media/doodle/doodle_4.gif" class="doodle-run-frame hover-lift">
             </div>
 
-            <p>The result is a fully playable, end-to-end platforming experience that gave me a deep understanding of how interactions affect player frustration and satisfaction. </p>
+            <p>The result is a fully playable, end-to-end platforming experience that gave me a deep understanding of how interactions affect player frustration and satisfaction.</p>
         </section>
 
-        <section id="ideas">
+        <section id="ideas" class="reveal">
             <h2>03 / Conceptual Ideas</h2>
             <br>
-            <p>I constantly sketch and prototype new mechanics to explore experimental game loops. I have a couple of ideas and sketches which I would like to show off here. </p>
+            <p>I constantly sketch and prototype new mechanics to explore experimental game loops. I have a couple of ideas and sketches which I would like to show off here.</p>
 
-            <div class="ideas-grid">
+            <div class="ideas-grid dynamic-grid">
                 <div class="idea-item" onclick="openLB('ideas',0)"><img src="media/ideas/bullet_plat.png" class="idea-frame"><p><strong>Bullet Platformer</strong></p></div>
                 <div class="idea-item" onclick="openLB('ideas',1)"><img src="media/ideas/infinijump.png" class="idea-frame"><p><strong>Infinijump</strong></p></div>
                 <div class="idea-item" onclick="openLB('ideas',2)"><img src="media/ideas/possum.png" class="idea-frame"><p><strong>Possum Game</strong></p></div>
@@ -94,13 +104,13 @@
             </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" class="reveal">
             <h2>04 / Playtesting</h2>
             <br>
-            <p>During the last couple of years, I did some playtesting for Tom Clancy's Rainbow Six Extraction, The Outlast Trials, Back 4 Blood, Deadlock and MultiVersus.  Here I always left detailed feedback for these games which I hope was pretty helpful for companies.</p>
+            <p>During the last couple of years, I did some playtesting for Tom Clancy's Rainbow Six Extraction, The Outlast Trials, Back 4 Blood, Deadlock and MultiVersus. Here I always left detailed feedback for these games which I hope was pretty helpful for companies.</p>
         </section>
 
-        <footer style="text-align: center; padding: 4rem 0;">
+        <footer class="reveal" style="text-align: center; padding: 4rem 0;">
             <img src="media/graphics/bottom_of_page.png" class="footer-art sketch-asset">
             <div class="contact-links">
                 <a href="mailto:mark.mucska@gmail.com">Email</a>
@@ -109,10 +119,9 @@
                 <a href="tel:+36301545406">Phone</a>
             </div>
             <p style="margin-top: 2rem; font-size: 0.7rem; color: #888;">© 2026 MÁRK MUCSKA</p>
-        </footer >
+        </footer>
 
     </div>
-
 
     <div class="lb" id="lb" onclick="lbOutside(event)">
         <div class="lb-inner">
@@ -142,16 +151,14 @@
     let currentGallery = null;
     let currentIndex = 0;
 
-    // 2. Open function
     function openLB(gal, idx) {
         currentGallery = gal;
         currentIndex = idx;
         renderLB();
         document.getElementById('lb').classList.add('open');
-        document.body.style.overflow = 'hidden'; // Stop scrolling
+        document.body.style.overflow = 'hidden'; 
     }
 
-    // 3. Update Image & Caption
     function renderLB() {
         const item = galleryData[currentGallery][currentIndex];
         const lbImg = document.getElementById('lb-img');
@@ -159,33 +166,72 @@
         document.getElementById('lb-cap').textContent = item.cap + ' (' + (currentIndex + 1) + '/' + galleryData[currentGallery].length + ')';
     }
 
-    // 4. Navigation
     function shiftLB(direction) {
         const total = galleryData[currentGallery].length;
         currentIndex = (currentIndex + direction + total) % total;
         renderLB();
     }
 
-    // 5. Close function
     function closeLB() {
         document.getElementById('lb').classList.remove('open');
         document.body.style.overflow = '';
         document.getElementById('lb-img').src = '';
     }
 
-    // 6. Close when clicking background
     function lbOutside(e) {
         if (e.target === document.getElementById('lb')) closeLB();
     }
 
-    // 7. Keyboard support
     document.addEventListener('keydown', e => {
         if (!document.getElementById('lb').classList.contains('open')) return;
         if (e.key === 'Escape') closeLB();
         if (e.key === 'ArrowRight') shiftLB(1);
         if (e.key === 'ArrowLeft') shiftLB(-1);
     });
-</script>
 
+    // --- DYNAMIC EFFECTS ADDITIONS ---
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Staggered Grids
+    const grids = document.querySelectorAll('.dynamic-grid');
+    const gridObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                const children = Array.from(entry.target.children);
+                children.forEach((child, i) => {
+                    child.style.transitionDelay = `${i * 0.15}s`;
+                });
+            }
+        });
+    }, { threshold: 0.15 });
+    grids.forEach(grid => gridObserver.observe(grid));
+
+    // Active nav highlight
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 150) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) {
+            a.classList.add('active');
+        }
+      });
+    });
+    </script>
 </body>
 </html>
