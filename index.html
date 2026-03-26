@@ -12,9 +12,10 @@
         <a href="#hero" class="nav-logo">Márk Mucska's Portfolio 2026</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#sneak">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#ideas">Ideas</a></li>
             <li><a href="#experience">Playtesting</a></li>
+            <li><button class="lang-btn">EN / HU</button></li>
         </ul>
     </nav>
 
@@ -34,23 +35,37 @@
         </header>
 
         <section id="about" class="reveal">
-            <h2>01 / About Me</h2>
-            <br>
-            <p>My name is Márk Mucska, I am 23 years old and I am a computer science student currently in my final year at the University of Pécs, Hungary. My focus is on creating a game that leaves an impact on the player. So far, I have worked on games in Unity and Godot. I am currently learning the ropes with Godot, but I am open to learn game development in any game engine.</p>
-            <br><br>
-            <p>I thrive in collaborative environments where technical constraints meet creative problem-solving. I have a strong passion for creating something that means something for people. I am currently seeking a summer internship where I can contribute to a production pipeline and learn from industry veterans. In my free time I love to play video games, do origami and write game reviews on Steam.</p>
+            <h2>1 / About Me</h2>
+            
+            <!-- Full width text on top -->
+            <div class="about-top">
+                <p>My name is Márk Mucska, I am 23 years old and I am a computer science student currently in my final year at the University of Pécs, Hungary. My focus is on creating a game that <b>leaves an impact on the player</b>. So far, I have worked on games in <b>Unity</b> and <b>Godot</b>. I am currently learning the ropes with Godot, but I am <b>open to learn</b> game development in any game engine.</p>
+            </div>
+
+            <!-- Split text and image on bottom -->
+            <div class="about-bottom">
+                <div class="about-bottom-text">
+                    <p>I thrive in collaborative environments where technical constraints meet creative problem-solving. I have a strong passion for creating something that means something for people. I am currently seeking a summer internship where I can contribute to a production pipeline and learn from industry veterans. In my free time I love to play video games, do origami and write game reviews on Steam.</p>
+                </div>
+                <div class="about-image-container">
+                    <img src="media/graphics/me.png" alt="Márk Mucska pointing" class="about-img">
+                    <span class="me-caption">- Me</span>
+                </div>
+            </div>
         </section>
 
-        <section id="sneak" class="reveal">
-            <h2>Sneak and Squeak</h2>
+        <section id="sneak" class="reveal" style="padding-top: 1rem;">
+            <h2>2.1 / Squeak or Sneak</h2>
             <br>
             <span class="project-meta">Lead Programmer & Technical Designer | Unity (C#) | 1 Week (Utrecht Summer School)</span>
             
-            <p>Developed during an intensive 5-day Game Design & Development program in Utrecht, focusing on rapid prototyping and cross-disciplinary collaboration. The goal was to design and prototype a co-op puzzle game from scratch within five days, centered around the prompt: "Cheese."</p>
+            </section>
+            
+            <p>Developed during an intensive 5-day Game Design & Development program in Utrecht, focusing on rapid prototyping and cross-disciplinary collaboration. The goal was to design and prototype a <b>co-op puzzle game</b> from scratch within five days, centered around the prompt: <b>"Cheese."</b></p>
             
             <img src="media/sneak/sneak_4.png" class="feature-img hover-lift" alt="Title Screen">
             
-            <p>Working as a small 3-person team against larger groups of 5, we had to rapidly prototype mechanics that felt polished enough for a "Best Game" showcase. As the primary developer, I focused on the "glue" that made the game playable: scripting player systems for co-op movement, building a modular interactable framework for puzzles, acting as the technical anchor for level integration, and collaborating on puzzle design.</p>
+            <p>Working as a small <b>3-person team</b> against larger groups of 5, we had to rapidly prototype mechanics that felt polished enough for a <b>"Best Game"</b> showcase. As the primary developer, I focused on the "glue" that made the game playable: <b>scripting player systems for co-op movement, building a modular interactable framework for puzzles, acting as the technical anchor for level integration, and collaborating on puzzle design.</b></p>
 
             <div class="gallery-grid dynamic-grid">
                 <img src="media/sneak/sneak_6.png" class="hover-lift">
@@ -59,23 +74,24 @@
                 <img src="media/sneak/sneak_3.gif" class="hover-lift">
             </div>
 
-            <p>Out of 6 competing teams, Sneak and Squeak won the "Best Game" award. Despite being the smallest team, we delivered the most stable and mechanically complete experience, proving our ability to prioritize "fun factor" and technical stability under a tight deadline.</p>
+            <p>Out of 6 competing teams, Sneak and Squeak won the <b>"Best Game"</b> award. Despite being the smallest team, we delivered the most stable and mechanically complete experience, proving our ability to prioritize "fun factor" and technical stability under a tight deadline.</p>
             
             <img src="media/sneak/sneak_5.png" class="hover-lift" style="max-width: 500px; margin: 2rem auto; display: block;" alt="Caught Screen">
         </section>
 
         <section id="doodle" class="reveal">
-            <h2>02 / Doodle Run</h2>
+            <h2>2.2 / Doodle Run</h2>
             <br>
             <span class="project-meta">Solo Developer (Design, Art, & Logic) | Construct 3 | 1 Week</span>
             
-            <p>Doodle Run is a high-precision 2D platformer focused on "hard parkour" mechanics, challenging the player through timed jumps and rhythmic movement. The primary hurdle was balancing "punishingly difficult" gameplay with "fair" mechanics, ensuring a failure felt like a skill error rather than a glitch.</p>
+            <p>Doodle Run is a <b>high-precision 2D platformer focused on "hard parkour" mechanics</b>, challenging the player through timed jumps and rhythmic movement. The primary hurdle was <b>balancing</b> "punishingly difficult" gameplay with "fair" mechanics, ensuring a failure felt like a skill error rather than a glitch.</p>
             <br><br>
             <p>As a solo creator, I managed every pillar of production:</p><br>
-            <ul>
-                <li><b>Mechanics</b>: Developed movement and jump using Construct’s event system.</li><br>
-                <li><b>Art Direction</b>: Created character sprites and environmental assets inspired by the game BattleBlock Theater, communicating "danger" vs. "safety".</li><br>
-                <li><b>Level Design</b>: Iterated on level layouts to introduce mechanics gradually before combining them into high-intensity sequences.</li><br>
+            
+            <ul class="doodle-list">
+                <li><b>Mechanics</b>: Developed movement and jump using Construct’s event system.</li>
+                <li><b>Art Direction</b>: Created character sprites and environmental assets inspired by the game BattleBlock Theater, communicating "danger" vs. "safety".</li>
+                <li><b>Level Design</b>: Iterated on level layouts to introduce mechanics gradually before combining them into high-intensity sequences.</li>
                 <li><b>Enemy Logic</b>: Scripted patrol behaviours and hazard triggers to add layers of complexity.</li>
             </ul>
 
@@ -90,9 +106,9 @@
         </section>
 
         <section id="ideas" class="reveal">
-            <h2>03 / Conceptual Ideas</h2>
+            <h2>3 / Conceptual Ideas</h2>
             <br>
-            <p>I constantly sketch and prototype new mechanics to explore experimental game loops. I have a couple of ideas and sketches which I would like to show off here.</p>
+            <p>I constantly <b>sketch and prototype new mechanics</b> to explore experimental game loops. I have a couple of ideas and sketches which I would like to show off here.</p>
 
             <div class="ideas-grid dynamic-grid">
                 <div class="idea-item" onclick="openLB('ideas',0)"><img src="media/ideas/bullet_plat.png" class="idea-frame"><p><strong>Bullet Platformer</strong></p></div>
@@ -107,15 +123,15 @@
         </section>
 
         <section id="experience" class="reveal">
-            <h2>04 / Playtesting</h2>
+            <h2>4 / Playtesting</h2>
             <br>
-            <p>During the last couple of years, I did some playtesting for Tom Clancy's Rainbow Six Extraction, The Outlast Trials, Back 4 Blood, Deadlock and MultiVersus. Here I always left detailed feedback for these games which I hope was pretty helpful for companies.</p>
+            <p>During the last couple of years, I did some playtesting for <b>Tom Clancy's Rainbow Six Extraction</b>, <b>The Outlast Trials</b>, <b>Back 4 Blood</b>, <b>Deadlock</b> and <b>MultiVersus</b>. Here I always left detailed feedback for these games which I hope was pretty helpful for companies.</p>
         </section>
 
         <footer class="reveal" style="text-align: center; padding: 4rem 0;">
             <img src="media/graphics/bottom_of_page.png" class="footer-art sketch-asset">
             <div class="contact-links">
-                <a href="mailto:mark.mucska@gmail.com">Email</a>
+                <a href="mailto:mark.mucska@gmail.com">mark.mucska@gmail.com</a>
                 <a href="https://github.com/robb1ngood" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/márk-mucska-1a187a334/" target="_blank">LinkedIn</a>
                 <a href="tel:+36301545406">+36301545406</a>
