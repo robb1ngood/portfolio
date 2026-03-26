@@ -44,7 +44,7 @@ nav {
     z-index: 1000;
     background: rgba(255, 255, 255, 0.95);
     border-bottom: 2px solid #000;
-    padding: 1.2rem 3rem;
+    padding: 0.6rem 3rem; /* Reduced vertical padding from 1.2rem to 0.6rem */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,7 @@ nav {
 
 /* Hero Section Layout */
 .site-header {
-    padding: 8rem 0 2rem; /* Adjusted for nav */
+    padding: 8rem 0 2rem;
     text-align: center;
 }
 
@@ -120,6 +120,7 @@ nav {
     width: 450px;
     height: 450px;
     margin: 0 auto 2.5rem;
+    border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -131,7 +132,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: spin 30s linear infinite;
+    animation: spin 15s linear infinite;
 }
 
 @keyframes spin {
@@ -168,7 +169,7 @@ nav {
     position: relative;
     background: rgba(255, 255, 255, 0.75);
     z-index: 2;
-    padding-top: 2rem; /* Buffer space under nav */
+    padding-top: 2rem;
 }
 
 /* Side Art */
@@ -191,16 +192,14 @@ nav {
 .left-art { left: 30px; }
 .right-art { animation-delay: -3s; right: 30px; }
 
-/* Adjusted inline background styles here */
 h1, h2, p, .project-meta, .idea-item p {
     display: inline;
     background: #ffffff;
-    padding: 0.2rem 0.8rem; /* Slightly thicker padding to compensate for shadow loss */
-    border-radius: 12px; /* Smooth rounded corners instead of 8px */
+    padding: 0.1rem 0.8rem;
+    border-radius: 12px;
     line-height: 2.2;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-    /* Note: Sharp, horizontal box shadows removed here to fix the square edges */
 }
 
 h1 { 
@@ -429,7 +428,7 @@ img, video {
 @media (max-width: 1100px) { .side-art { display: none; } }
 @media (max-width: 800px) {
     .lb-arrow { display: none; }
-    nav { padding: 1rem; }
+    nav { padding: 0.8rem; }
     .nav-links { display: none; }
 }
 @media (max-width: 600px) { 
